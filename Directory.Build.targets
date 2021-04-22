@@ -1,0 +1,6 @@
+<Project>
+  <!-- Temporarily enable the linker for net6.0-ios until we get machine pools with Big Sur and Xcode 12.5 is stable -->
+  <PropertyGroup>
+    <LinkMode Condition=" '$(TargetFramework)' == 'net6.0-ios' ">SdkOnly</LinkMode>
+  </PropertyGroup>
+</Project>
